@@ -1,0 +1,49 @@
+main
+
+	.services
+		border: 1px solid black
+
+		height: 120vh
+		background-color: #EBEBEB
+		position: relative
+
+		>p
+			position: absolute
+			height: 25px
+			left: 20%
+			top: 100px
+			font-family: 'Lato', sans-serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+
+		h2
+			position: absolute
+			width: 663px
+			height: 47px
+			left: 20%
+			top: 150px
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+			color: #333333
+
+		.services_cards
+			position: absolute
+			top: 25%
+			left: 20%
+			display: grid
+			grid-template-columns: repeat(3, 1fr)
+			grid-template-rows:	repeat(2, 1fr)
+			grid-gap: 20px
+
+			>div
+				background-image: url('../media/card_background.png')
+				width: 350px
+				height: 360px
+
+			// .card1

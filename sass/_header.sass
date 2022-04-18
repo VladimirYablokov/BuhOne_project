@@ -1,0 +1,88 @@
+nav
+	// border: 1px solid black
+
+	height: 10vh
+	display: flex
+	justify-content: space-between
+	padding: 0 20%
+	position: relative
+
+
+	#logo
+		display: flex
+		justify-content: center
+		align-items: center
+
+		img
+			height: 35px
+			width: 35px
+
+		.logoText
+			padding-left: 20px
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 36px
+			line-height: 50px
+			color: #005FA3
+
+	.nav
+		list-style: none
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		li
+			font-family: 'Lato', sans-serif
+			font-style: normal
+			font-weight: 700
+			font-size: 14px
+			line-height: 17px
+			letter-spacing: 0.1em
+			text-transform: uppercase
+			cursor: pointer
+			a
+				color: black
+
+				&:visited
+					color: black
+
+		li+li
+			padding-left: 50px
+
+.head_main
+	// border: 1px solid black
+
+	height: 75vh
+	width: 100%
+	background-image: url('../media/main_background.png')
+	background-position: top center
+	// background-attachment: fixed
+	position: relative
+	background-size: cover
+
+	#main_root
+		display: flex
+		flex-direction: column
+
+		h1
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 700
+			font-size: 48px
+			line-height: 66px
+			color: white
+			position: absolute
+			left: 20%
+			top: 150px
+			max-width: 500px
+
+		.main_btn
+			width: 270px
+			height: 60px
+			background-color: #005FA3
+			color: white
+			position: absolute
+			left: 20%
+			top: 350px
+			cursor: pointer

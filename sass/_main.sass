@@ -1,17 +1,16 @@
 main
 
 	.services
-		border: 1px solid black
-
-		height: 120vh
+		height: 1242px
 		background-color: #EBEBEB
 		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		padding-left: 20%
+		padding-right: 20%
 
 		>p
-			position: absolute
-			height: 25px
-			left: 20%
-			top: 100px
 			font-family: 'Lato', sans-serif
 			font-style: normal
 			font-weight: 900
@@ -19,23 +18,18 @@ main
 			line-height: 33px
 			color: #BDBDBD
 
-		>h2
-			position: absolute
-			width: 663px
-			height: 47px
-			left: 20%
-			top: 150px
+		h2
 			font-family: 'Merriweather', serif
 			font-style: normal
 			font-weight: 900
 			font-size: 48px
 			line-height: 69px
 			color: #333333
+			padding-top: 30px
+			padding-bottom: 50px
+
 
 		.services_cards
-			position: absolute
-			top: 25%
-			left: 20%
 			display: grid
 			grid-template-columns: repeat(3, 1fr)
 			grid-template-rows:	repeat(2, 1fr)
@@ -53,18 +47,16 @@ main
 					font-size: 24px
 					line-height: 30px
 					color: white
-					padding-top: 80%
+					padding-top: 75%
 					padding-left: 10%
 
 	.about_us
-
 		width: 100%
 		height: 80vh
 		background-color: #F9F9F9
 		display: flex
 
 		.left_side
-
 			max-width: 50%
 			min-width: 50%
 
@@ -108,12 +100,11 @@ main
 
 
 		.right_side
-
 			max-width: 50%
 			min-width: 50%
 			display: grid
-			grid-template-columns: repeat(2, 250px)
-			grid-template-rows:	repeat(2, 250px)
+			grid-template-columns: repeat(2, 255px)
+			grid-template-rows:	repeat(2, 255px)
 			grid-gap: 40px
 			padding-top: 7%
 
@@ -150,4 +141,103 @@ main
 					color: #005FA3
 					padding-top: 15%
 
+	.our_clients
+		display: flex
+		flex-direction: column
+		height: 630px
+		background-color: #EBEBEB
+		padding-left: 20%
 
+		>h2
+			font-family: 'Lato', sans-serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+			padding-top: 5%
+			padding-bottom: 2%
+
+		>p
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+
+		>div
+			display: flex
+			padding-top: 10%
+
+	.reviews
+		display: flex
+		flex-direction: column
+		height: 800px
+		padding-left: 20%
+		padding-top: 5%
+
+
+		>h2
+			font-family: 'Lato', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 24px
+			line-height: 33px
+			color: #BDBDBD
+
+		>p
+			font-family: 'Merriweather', serif
+			font-style: normal
+			font-weight: 900
+			font-size: 48px
+			line-height: 69px
+			padding-bottom: 50px
+
+		>div
+			display: flex
+			flex-direction: column
+			background-color: #EBEBEB
+			width: 1110px
+			height: 320px
+			padding-left: 95px
+			padding-right:95px
+
+
+
+			>p
+				font-family: 'Lato', serif
+				font-style: normal
+				font-weight: 300
+				font-size: 18px
+				line-height: 25px
+				padding-top: 45px
+
+
+			.client
+				display: flex
+				align-items: center
+				padding-top: 30px
+				
+				>img
+					width: 80px
+					height: 80px
+
+				.client_name
+					
+						
+					>p
+						font-family: 'Lato', serif
+						font-style: bold
+						font-weight: 900
+						font-size: 18px
+						line-height: 25px
+						color: #000000
+						padding-left: 30px
+
+					>p+p
+						font-family: 'Lato', serif
+						font-style: normal
+						font-weight: 400
+						font-size: 14px
+						line-height: 19px
+						color: #4F4F4F

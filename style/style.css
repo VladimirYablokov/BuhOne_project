@@ -92,16 +92,16 @@ nav .nav li + li {
 }
 
 main .services {
-  border: 1px solid black;
-  height: 120vh;
+  height: 1242px;
   background-color: #EBEBEB;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 main .services > p {
-  position: absolute;
-  height: 25px;
-  left: 20%;
-  top: 100px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -109,23 +109,17 @@ main .services > p {
   line-height: 33px;
   color: #BDBDBD;
 }
-main .services > h2 {
-  position: absolute;
-  width: 663px;
-  height: 47px;
-  left: 20%;
-  top: 150px;
+main .services h2 {
   font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 69px;
   color: #333333;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 main .services .services_cards {
-  position: absolute;
-  top: 25%;
-  left: 20%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -143,7 +137,7 @@ main .services .services_cards > div > p {
   font-size: 24px;
   line-height: 30px;
   color: white;
-  padding-top: 80%;
+  padding-top: 75%;
   padding-left: 10%;
 }
 main .about_us {
@@ -195,8 +189,8 @@ main .about_us .right_side {
   max-width: 50%;
   min-width: 50%;
   display: grid;
-  grid-template-columns: repeat(2, 250px);
-  grid-template-rows: repeat(2, 250px);
+  grid-template-columns: repeat(2, 255px);
+  grid-template-rows: repeat(2, 255px);
   grid-gap: 40px;
   padding-top: 7%;
 }
@@ -232,6 +226,100 @@ main .about_us .right_side > div > a {
   text-decoration-line: underline;
   color: #005FA3;
   padding-top: 15%;
+}
+main .our_clients {
+  display: flex;
+  flex-direction: column;
+  height: 630px;
+  background-color: #EBEBEB;
+  padding-left: 20%;
+}
+main .our_clients > h2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+main .our_clients > p {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+}
+main .our_clients > div {
+  display: flex;
+  padding-top: 10%;
+}
+main .reviews {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+main .reviews > h2 {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+  color: #BDBDBD;
+}
+main .reviews > p {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  padding-bottom: 50px;
+}
+main .reviews > div {
+  display: flex;
+  flex-direction: column;
+  background-color: #EBEBEB;
+  width: 1110px;
+  height: 320px;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+main .reviews > div > p {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 45px;
+}
+main .reviews > div .client {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+main .reviews > div .client > img {
+  width: 80px;
+  height: 80px;
+}
+main .reviews > div .client .client_name > p {
+  font-family: "Lato", serif;
+  font-style: bold;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  padding-left: 30px;
+}
+main .reviews > div .client .client_name > p + p {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #4F4F4F;
 }
 
 /*# sourceMappingURL=style.css.map */

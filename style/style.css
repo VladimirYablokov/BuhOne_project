@@ -89,6 +89,8 @@ nav .nav li + li {
   left: 20%;
   top: 350px;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 main .services {
@@ -324,11 +326,7 @@ main .reviews > div .client .client_name > p + p {
   color: #4F4F4F;
 }
 
-footer {
-  border: 1px solid black;
-}
 footer .feedback {
-  border: 1px solid black;
   background-image: url("../media/feedback_background.png");
   background-position: top center;
   background-size: cover;
@@ -345,7 +343,7 @@ footer .feedback .feedback_left_side {
   color: white;
 }
 footer .feedback .feedback_left_side h2 {
-  font-family: "Merriweather";
+  font-family: "Merriweather", serif;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -353,7 +351,7 @@ footer .feedback .feedback_left_side h2 {
   color: #FFFFFF;
 }
 footer .feedback .feedback_left_side p {
-  font-family: "Lato";
+  font-family: "Lato", serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -363,22 +361,37 @@ footer .feedback .feedback_left_side .contacts {
   display: flex;
 }
 footer .feedback .feedback_right_side {
-  max-width: 50%;
-  color: white;
+  display: flex;
 }
 footer .feedback .feedback_right_side form {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  max-width: 50%;
+  color: white;
+  height: 300px;
 }
 footer .feedback .feedback_right_side form .form_name {
   display: flex;
   flex-direction: column;
   padding-right: 30px;
+  height: 50px;
 }
 footer .feedback .feedback_right_side form .form_name input {
   background-color: transparent;
   color: white;
   outline: none;
   border: none;
+  height: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+}
+footer .feedback .feedback_right_side form .form_name input::after {
+  content: "";
+  border-bottom: 1px solid #FFFFFF;
 }
 footer .feedback .feedback_right_side form .form_lastname {
   display: flex;
@@ -389,6 +402,64 @@ footer .feedback .feedback_right_side form .form_lastname input {
   color: white;
   outline: none;
   border: none;
+  height: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+}
+footer .feedback .feedback_right_side form .textarea {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 30px;
+}
+footer .feedback .feedback_right_side form .textarea label {
+  height: 20px;
+}
+footer .feedback .feedback_right_side form .textarea input {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  height: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+}
+footer .feedback .feedback_right_side form .textarea input:after {
+  content: "";
+  border-bottom: 10px solid #FFFFFF;
+}
+footer .feedback .feedback_right_side .footer_btn {
+  width: 270px;
+  height: 60px;
+  background-color: #005FA3;
+  color: white;
+  position: absolute;
+  left: 20%;
+  top: 350px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+footer .developed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+footer .developed p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */

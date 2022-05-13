@@ -5,15 +5,15 @@ let imgIndex = 0;
 const list = [
 	{
 		text: 'Бухгалтерские услуги в Санкт-Петербурге',
-		img: 'background1.png',
+		img: 'background1.png'
 	},
 	{
 		text: 'Бухгалтерские услуги в Санкт-Петербурге',
-		img: 'background2.png',
+		img: 'background2.png'
 	},
 	{
 		text: 'Бухгалтерские услуги в Санкт-Петербурге',
-		img: 'background3.png',
+		img: 'background3.png'
 	},
 	{
 		text: 'Бухгалтерские услуги в Санкт-Петербурге',
@@ -28,9 +28,9 @@ const slider_trigger = document.createElement('div');
 const slider_trigger_left = document.createElement('div');
 const slider_trigger_right = document.createElement('div');
 
-slider_main.append(slider_frame, slider_trigger);
-slider_container.append(slider_main);
 galleryElem.append(slider_container);
+slider_container.append(slider_main);
+slider_main.append(slider_frame, slider_trigger);
 slider_trigger.append(slider_trigger_left, slider_trigger_right);
 
 slider_container.classList.add('slider-container');
@@ -61,7 +61,7 @@ const frame_elems = list.map(obj=>{
 
 const render = ()=>{
 	const slider_width = slider_container.offsetWidth;
-	slider_frame.style.width = slider_width * list.length + 'px';
+	slider_frame.style.right = slider_width * imgIndex  + 'px';
 	const liList = document.querySelectorAll('.slider-points li');
 	liList.forEach(t=>t.classList.remove('active'));
 	liList[imgIndex].classList.add('active');

@@ -37,9 +37,16 @@ main
 			justify-content: center
 
 			>div
-				background-image: url('../media/card_background.png')
+				background: url('../media/card_background.png')
 				width: 350px
 				height: 360px
+				cursor: pointer
+				transition: background 0.5s ease
+
+				&:hover
+					background: url('../media/card_background2.png')
+					background-size: cover
+					background-position: center
 
 				>p
 					font-family: 'Lato', sans-serif
@@ -114,8 +121,17 @@ main
 				background-color: #EBEBEB
 				padding: 15%
 				display: flex
+				color: black
 				flex-direction: column
 				justify-content: space-between
+				transition: background-color 0.5s, color 0.5s ease
+
+				&:hover
+					background-color: #005FA3
+					color: #fff
+
+					a
+						color: #fff
 
 				>h3
 					font-family: 'Lato', serif
@@ -142,6 +158,9 @@ main
 					text-decoration-line: underline
 					color: #005FA3
 					padding-top: 15%
+					transition: color 0.5s
+
+
 
 	.our_clients
 		display: flex

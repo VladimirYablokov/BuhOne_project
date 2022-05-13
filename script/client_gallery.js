@@ -1,3 +1,4 @@
+{
 const clientGalleryElem = document.querySelector('.client_gallery');
 const mediaPath = 'media/';
 let clientIndex = 0;
@@ -36,7 +37,7 @@ const clientRender = ()=>{
 	const client_width = client_container.offsetWidth;
 	if(client_width >= 1000){
 		client_frame.style.right = client_width/4 * clientIndex + 'px';
-	}else if(client_width < 1200 && client_width > 850){
+	}else if(client_width < 1000 && client_width > 850){
 		client_frame.style.right = client_width/3 * clientIndex + 'px';
 	}else if(client_width < 850 && client_width > 600){
 		client_frame.style.right = client_width/2 * clientIndex + 'px';
@@ -52,7 +53,7 @@ const clientResize = ()=>{
 	const client_width = client_container.offsetWidth;
 	if(client_width >= 1000){
 		client_frame.style.width = client_width/4 * imgList.length + 'px';
-	}else if(client_width < 1200 && client_width > 850){
+	}else if(client_width < 1000 && client_width > 850){
 		client_frame.style.width = client_width/3 * imgList.length + 'px';
 	}else if(client_width < 850 && client_width > 600){
 		client_frame.style.width = client_width/2 * imgList.length + 'px';
@@ -92,7 +93,7 @@ ulClient.append(...imgList.map((_, index)=>{
 	elem.addEventListener('click', e=>{
 		const liElem = e.target;
 		const liList = [...liElem.parentNode.children];
-		clientsIndex = liList.indexOf(liElem);
+		clientIndex = liList.indexOf(liElem);
 		clientRender();
 	});
 	return elem;
@@ -102,3 +103,4 @@ client_container.append(ulClient);
 
 clientRender()
 clientResize();
+}

@@ -42,7 +42,7 @@ slider_trigger.classList.add('slider-trigger');
 slider_trigger_left.innerHTML = '<'
 slider_trigger_right.innerHTML = '>'
 
-const frame_elems = list.map(obj=>{
+const frameElem = list.map(obj=>{
 	const slider_width = slider_container.offsetWidth;
 	const divElem = document.createElement('div');
 	divElem.style.width = slider_width + 'px';
@@ -71,12 +71,12 @@ const render = ()=>{
 const resize = ()=>{
 	const slider_width = slider_container.offsetWidth;
 	slider_frame.style.width = slider_width * list.length + 'px';
-	frame_elems.forEach(elem => elem.style.width = slider_width + 'px');
+	frameElem.forEach(elem => elem.style.width = slider_width + 'px');
 	render();
 };
 
 window.addEventListener('resize', resize);
-slider_frame.append(...frame_elems);
+slider_frame.append(...frameElem);
 
 slider_trigger_left.addEventListener('click', ()=>{
 	if(imgIndex > 0){

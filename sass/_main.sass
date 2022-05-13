@@ -1,5 +1,4 @@
 main
-
 	.services
 		height: 1242px
 		background-color: #EBEBEB
@@ -27,7 +26,6 @@ main
 			color: #333333
 			padding-top: 30px
 			padding-bottom: 50px
-
 
 		.services_cards
 			display: grid
@@ -75,7 +73,7 @@ main
 				font-size: 24px
 				line-height: 33px
 				color: #BDBDBD
-				padding-left: 40%
+				padding-left: 37%
 				padding-top: 12%
 				padding-bottom: 3%
 
@@ -86,13 +84,11 @@ main
 				font-size: 48px
 				line-height: 69px
 				color: #333333
-				padding-left: 40%
-
+				padding-left: 37%
 
 			>p+p
 				color: #005FA3
-				padding-left: 40%
-
+				padding-left: 37%
 
 			>p+p+p
 				font-family: 'Lato', sans-serif
@@ -101,11 +97,9 @@ main
 				font-size: 18px
 				line-height: 25px
 				color: #000000
-				padding-left: 40%
+				padding-left: 37%
 				padding-right: 10%
 				padding-top: 3%
-
-
 
 		.right_side
 			max-width: 50%
@@ -115,7 +109,7 @@ main
 			grid-template-rows:	repeat(2, 255px)
 			grid-gap: 40px
 			padding-top: 7%
-			padding-left: 17px
+			padding-left: 7px
 
 			>div
 				background-color: #EBEBEB
@@ -160,14 +154,14 @@ main
 					padding-top: 15%
 					transition: color 0.5s
 
-
-
 	.our_clients
 		display: flex
 		flex-direction: column
+		justify-content: center
 		height: 630px
 		background-color: #EBEBEB
 		padding-left: 20%
+		padding-right: 20%
 
 		>h2
 			font-family: 'Lato', sans-serif
@@ -186,9 +180,76 @@ main
 			font-size: 48px
 			line-height: 69px
 
-		>div
+		.client-container
+			margin: 0 auto
+			width: 100%
+			height: 200px
+			position: relative
+
+			&>div
+				width: 100%
+				height: 70%
+
+		.client-main
+			overflow: hidden
+
+		.client-frame
+			height: 100%
+			position: relative
 			display: flex
-			padding-top: 10%
+			justify-content: space-between
+			transition: right 0.5s ease
+
+			&>div
+				height: 100%
+				width: 80%
+				background-size: cover
+				background-position: center
+
+		.client-trigger
+			position: absolute
+			right: 1%
+			bottom: 10%
+			display: flex
+
+			&>div
+				height: 50px
+				width: 50px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 14px
+				color: white
+				background-color: #005FA359
+				cursor: pointer
+				transition: background-color 0.3s ease
+
+				&:hover
+					background-color: #005fa3
+
+		.client-points
+			position: absolute
+			bottom: 0
+			left: 0
+			display: flex
+			list-style: none
+
+			li
+				width: 8px
+				height: 8px
+				background-color: #005FA359
+				cursor: pointer
+				border-radius: 50px
+				transition: background-color 0.2s ease
+
+				&:hover
+					background-color: #005FA3d6
+
+				&.activeClient
+					background-color: #005FA3
+
+			li+li
+				margin-left: 30px
 
 	.reviews
 		display: flex
@@ -223,8 +284,6 @@ main
 			padding-left: 95px
 			padding-right:95px
 
-
-
 			>p
 				font-family: 'Lato', serif
 				font-style: normal
@@ -245,7 +304,6 @@ main
 
 				.client_name
 					
-						
 					>p
 						font-family: 'Lato', serif
 						font-style: bold

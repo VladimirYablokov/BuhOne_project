@@ -1,3 +1,4 @@
+{
 const galleryElem = document.querySelector('.head_main')
 const mediaPath = 'media/';
 let imgIndex = 0;
@@ -111,6 +112,7 @@ ulElem.append(...list.map((_, index)=>{
 
 slider_container.append(ulElem);
 
-render()
+render();
 resize();
+}
 

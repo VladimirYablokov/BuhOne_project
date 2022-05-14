@@ -106,7 +106,7 @@ nav .nav li + li {
 }
 .head_main .slider-trigger {
   position: absolute;
-  right: 22.5%;
+  right: 21%;
   bottom: 10%;
   display: flex;
 }
@@ -360,7 +360,7 @@ main .our_clients .client-frame > div {
 main .our_clients .client-trigger {
   position: absolute;
   right: 1%;
-  bottom: 10%;
+  bottom: 0;
   display: flex;
 }
 main .our_clients .client-trigger > div {
@@ -545,6 +545,7 @@ footer .feedback {
   position: relative;
   height: 70vh;
   padding-left: 20%;
+  padding-right: 20%;
   padding-top: 5%;
   display: flex;
 }
@@ -680,7 +681,7 @@ footer .feedback .feedback_right_side .footer_btn {
   background-color: #005FA3;
   color: white;
   position: absolute;
-  right: 200px;
+  right: 20%;
   top: 450px;
   cursor: pointer;
   outline: none;

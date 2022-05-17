@@ -154,7 +154,7 @@ nav .navList li + li {
   margin-left: 30px;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
   nav .navList {
     display: none;
   }
@@ -167,10 +167,10 @@ nav .navList li + li {
     width: 70px;
     height: 70px;
     background-image: url("../media/menu.png");
+    cursor: pointer;
   }
 }
 main .services {
-  height: 1242px;
   background-color: #EBEBEB;
   position: relative;
   display: flex;
@@ -178,6 +178,8 @@ main .services {
   flex-direction: column;
   padding-left: 18.5%;
   padding-right: 20%;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 main .services > p {
   font-family: "Lato", sans-serif;
@@ -557,6 +559,71 @@ main .reviews .content-feedback .human .company {
   font-size: 14px;
 }
 
+@media (max-width: 1200px) {
+  main .services .services_cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  main .services .services_cards > div {
+    width: 700px;
+    background-size: cover;
+  }
+
+  main .services .services_cards > div p {
+    padding-top: 40%;
+  }
+
+  main .about_us {
+    height: 100%;
+    display: block;
+    padding-bottom: 100px;
+  }
+
+  main .about_us .left_side {
+    max-width: 100%;
+  }
+
+  main .about_us .left_side > h2 {
+    padding-left: 15%;
+  }
+
+  main .about_us .left_side p {
+    padding-left: 15%;
+  }
+
+  main .about_us .left_side p + p {
+    padding-left: 15%;
+  }
+
+  main .about_us .left_side p + p + p {
+    padding-left: 15%;
+  }
+
+  main .about_us .right_side {
+    grid-template-columns: repeat(1, 656px);
+    grid-template-rows: repeat(4, 200px);
+    grid-gap: 40px;
+    padding-top: 7%;
+    padding-left: 7px;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  main .about_us .right_side > div {
+    padding: 15%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  main .about_us .right_side > div > a {
+    padding-top: 0%;
+  }
+
+  main .reviews .content-feedback .human {
+    display: none;
+  }
+}
 footer .feedback {
   background-image: url("../media/feedback_background.png");
   background-position: top center;
@@ -718,6 +785,29 @@ footer .developed p {
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (max-width: 1200px) {
+  footer .feedback {
+    display: block;
+    height: 100vh;
+  }
+
+  footer .feedback .feedback_left_side {
+    max-width: 100%;
+  }
+
+  footer .feedback .feedback_left_side h2 {
+    padding-bottom: 35px;
+  }
+
+  footer .feedback .feedback_left_side p {
+    padding-bottom: 35px;
+  }
+
+  footer .feedback .feedback_right_side .footer_btn {
+    top: 650px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

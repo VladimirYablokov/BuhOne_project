@@ -30,13 +30,17 @@ nav #logo .logoText {
   line-height: 50px;
   color: #005FA3;
 }
-nav .nav {
+nav .menu {
+  display: none;
+  background-image: url("../media/menu.png");
+}
+nav .navList {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .nav li {
+nav .navList li {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -46,13 +50,13 @@ nav .nav li {
   text-transform: uppercase;
   cursor: pointer;
 }
-nav .nav li a {
+nav .navList li a {
   color: black;
 }
-nav .nav li a:visited {
+nav .navList li a:visited {
   color: black;
 }
-nav .nav li + li {
+nav .navList li + li {
   padding-left: 50px;
 }
 
@@ -150,6 +154,21 @@ nav .nav li + li {
   margin-left: 30px;
 }
 
+@media (max-width: 980px) {
+  nav .navList {
+    display: none;
+  }
+
+  nav .menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-image: url("../media/menu.png");
+  }
+}
 main .services {
   height: 1242px;
   background-color: #EBEBEB;
